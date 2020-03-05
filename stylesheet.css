@@ -1,0 +1,193 @@
+
+
+
+body {
+    font-family: 'PT Mono', monospace, serif;
+    margin: 0;
+    /* background-color: #A1A1A1; */
+    background-color: ghostwhite;
+}
+
+.header {
+position: absolute;
+padding: 20px;
+text-align: right;
+    margin-left: 200px;
+    background-color: ghostwhite;
+
+
+}
+
+
+#place_holder_1 {
+    margin-top: 100px;
+}
+
+#left_zoom {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    margin-top: 0;
+    background-color: ghostwhite;
+}
+
+
+
+
+
+.img_1 {
+    width: 200px;
+    height: 200px;
+    /*position: absolute;
+    top: 40%;
+    left: 40%; */
+
+}
+
+.text_1 {
+    /*position: absolute;
+    top: 40%;
+    left: 40%;*/
+    color: inherit;
+    text-decoration: inherit;
+    z-index: 1;
+}
+
+
+
+
+
+.img_2 {
+    width: 200px;
+    height: 200px;
+    /*position: absolute;
+    top: 20%;
+    left: 30%;*/
+
+}
+
+.text_2 {
+    position: absolute;
+    /*top: 20%;
+    left: 30%;*/
+    color: inherit;
+    text-decoration: inherit;
+    z-index: 1;
+
+}
+
+
+
+.img_3 {
+    width: 200px;
+    height: 200px;
+    /*position: absolute;
+    top: 50%;
+    left: 25%;*/
+
+}
+
+.text_3 {
+    /*position: absolute;
+    top: 50%;
+    left: 25%;*/
+    color: inherit;
+    text-decoration: inherit;
+    z-index: 1;
+
+}
+
+
+/* Css for drag */
+
+#mydiv {
+    position: absolute;
+    color: inherit;
+    text-decoration: inherit;
+    top: 40%;
+    left: 40%;
+}
+
+#mydivheader {
+    padding: 10px;
+    cursor: move;
+    color: inherit;
+    text-decoration: inherit;
+
+
+}
+
+
+/*
+
+
+
+.img_1:hover  #mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: green;
+    color: black;
+    top: 40%;
+    left: 40%;
+}
+
+/* end css for dag */
+
+
+#mydiv_2 {
+    position: absolute;
+    /*border: 1px solid #d3d3d3;*/
+    top: 20%;
+    left: 30%
+}
+
+#mydiv_2header {
+    padding: 10px;
+    cursor: move;
+    color: inherit;
+    text-decoration: inherit;
+
+
+}
+
+#mydiv_3 {
+    position: absolute;
+    /*border: 1px solid #d3d3d3;*/
+    top: 50%;
+    left: 25%;
+}
+
+#mydiv_3header {
+    padding: 10px;
+    cursor: move;
+    color: inherit;
+    text-decoration: inherit;
+
+
+
+
+}
+
+
+
+/*
+showme {
+    display: none;
+}
+
+.showhim:hover .showme {
+    display: block;
+}
+*/
+
+
+.brightness {
+    background-color: white;
+    display: inline-block;
+
+}
+.brightness img:hover {
+    opacity: .5;
+}
