@@ -7,6 +7,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
 
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
@@ -19,22 +21,30 @@
 <div class="header">
 
     <a href="about.html">about </a>  	&nbsp; 	&nbsp; 	&nbsp;
-    <a href="http://www.cas-co.be/over-cas-co/"> cas-co </a>
 </div>
 
 
 <!--<input type = "button" id = "driver" value = "Load Random Image" />-->
+
+
 <div id="left_zoom">
 
-    <div id="place_holder_1"> </div>
+    <div class="preview">
+        <img class="zoom" src="placeholder.png">
+    </div>
 
-    <div class="sidebar"> <p> Instructions: Click to enlarge any image/text </p>
+
+    <div class="sidebar"> <!--<p> Instructions: Click three times to reload the page </p>
+
+        <p> Use the mousewheel or touchpad scroll to zoom</p>
+
+
 
         <p> </p>
         <p>Press and hold above the image/text to move</p>
-
+--> 
     <p> </p>
-    <p> Press the spacebar to reload the page. </p></div>
+ </div>
 
 </div>
 
@@ -47,6 +57,7 @@
     <!-- Draggable DIV -->
     <div id="mydiv">
         <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+        <div id="artist_1"> </div>
         <div id="mydivheader"></div>
   <div id="results"> </div>
     </div>
@@ -64,6 +75,7 @@
 
     <!-- Draggable DIV -->
     <div id="mydiv_2">
+        <div id="artist_2"> </div>
         <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
         <div id="mydiv_2header">  </div>
         <div id="results_2"> </div>
@@ -73,6 +85,7 @@
     <!-- Draggable DIV -->
     <div id="mydiv_3">
         <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+        <div id="artist_3"></div>
         <div id="mydiv_3header">   </div>
         <div id="results_3"> </div>
     </div>
@@ -82,11 +95,22 @@
 
 </div>
 
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>-->
 
 <script type="text/javascript" src="functions.js"></script>
+
+<script src="wheelzoom.js"></script>
+
+<!--
+    <script>
+    wheelzoom(document.querySelector('img.zoom'));
+</script>
+-->
+
 
 </body>
 </html>
