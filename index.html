@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="my_body">
 <head>
     <meta charset="UTF-8">
-    <title>Random_Image_Selector</title>
+    <title>PUNCTUEEL ONBEPAALD</title>
    <!-- <script type="text/javascript" src="mydata.json"></script> -->
 
     <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
+    <script src="p5.js"></script>
+ <!--   <script src="my_p5.js"></script>-->
 
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
@@ -16,17 +18,24 @@
 
 </head>
 
-<body>
+<body id="body_main">
 
 <div class="header">
 
-    <a href="about.html">about </a>  	&nbsp; 	&nbsp; 	&nbsp;
+    <a href="about.html" style="color: blue">about </a><i id="punctueel">   .punctueelonbepaald</i>
+
+  <div id='seconds-counter'> </div>
+<!--  <img src="TIMER.gif" id="timer">-->
+
+   <!-- <div id="artist_1"> </div> -->
+
+    &nbsp; 	&nbsp; 	&nbsp;
 </div>
 
 
 <!--<input type = "button" id = "driver" value = "Load Random Image" />-->
 
-
+<!--
 <div id="left_zoom">
 
     <div class="preview">
@@ -34,7 +43,11 @@
     </div>
 
 
-    <div class="sidebar"> <!--<p> Instructions: Click three times to reload the page </p>
+    <div class="sidebar">
+-->
+
+
+        <!--<p> Instructions: Click three times to reload the page </p>
 
         <p> Use the mousewheel or touchpad scroll to zoom</p>
 
@@ -44,9 +57,43 @@
         <p>Press and hold above the image/text to move</p>
 --> 
     <p> </p>
- </div>
+<svg width="100%" height="100%">
 
-</div>
+    <line id="line1" x1="0" y1="50" x2="350" y2="50" />
+    <line id="line2" x1="0" y1="50" x2="350" y2="50" />
+    <line id="line3" x1="0" y1="50" x2="350" y2="50" />
+    <line id="line4" x1="0" y1="50" x2="350" y2="50" />
+    <line id="line5" x1="0" y1="50" x2="350" y2="50" />
+    <line id="line6" x1="0" y1="50" x2="350" y2="50" />
+    <line id="line7" x1="0" y1="50" x2="350" y2="50" />
+    <line id="line8" x1="0" y1="50" x2="350" y2="50" />
+    <line id="line9" x1="0" y1="50" x2="350" y2="50" />
+    <line id="line10" x1="0" y1="50" x2="350" y2="50" />
+    <line id="line11" x1="0" y1="50" x2="350" y2="50" />
+    <line id="line12" x1="0" y1="50" x2="350" y2="50" />
+    <line id="line13" x1="0" y1="50" x2="350" y2="50" />
+    <line id="line14" x1="0" y1="50" x2="350" y2="50" />
+    <line id="line15" x1="0" y1="50" x2="350" y2="50" />
+    <line id="line16" x1="0" y1="50" x2="350" y2="50" />
+    <line id="line17" x1="0" y1="50" x2="350" y2="50" />
+    <line id="line18" x1="0" y1="50" x2="350" y2="50" />
+    <line id="line19" x1="0" y1="50" x2="350" y2="50" />
+    <line id="line20" x1="0" y1="50" x2="350" y2="50" />
+    <line id="line21" x1="0" y1="50" x2="350" y2="50" />
+    <line id="line22" x1="0" y1="50" x2="350" y2="50" />
+    <line id="line23" x1="0" y1="50" x2="350" y2="50" />
+    <line id="line24" x1="0" y1="50" x2="350" y2="50" />
+    <line id="line25" x1="0" y1="50" x2="350" y2="50" />
+    <line id="line26" x1="0" y1="50" x2="350" y2="50" />
+    <line id="line27" x1="0" y1="50" x2="350" y2="50" />
+    <line id="line28" x1="0" y1="50" x2="350" y2="50" />
+    <line id="line29" x1="0" y1="50" x2="350" y2="50" />
+    <line id="line30" x1="0" y1="50" x2="350" y2="50" />
+
+
+
+</svg>
+
 
 
 
@@ -54,12 +101,17 @@
 <div id="collage">
 
 
+
+    <!--<svg width="1000px" height="100%"><line id="line2" x1="0" y1="50" x2="500" y2="50" /></svg>-->
+
+
     <!-- Draggable DIV -->
     <div id="mydiv">
         <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
-        <div id="artist_1"> </div>
-        <div id="mydivheader"></div>
-  <div id="results"> </div>
+    <div id="artist_1"> </div>
+         <div class="placeholder"> placerholder </div>
+     <div id="mydivheader"></div>
+  <div id="results_1"> </div>
     </div>
 
     <!-- Draggable DIV
@@ -76,6 +128,8 @@
     <!-- Draggable DIV -->
     <div id="mydiv_2">
         <div id="artist_2"> </div>
+        <div class="placeholder"> placerholder </div>
+
         <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
         <div id="mydiv_2header">  </div>
         <div id="results_2"> </div>
@@ -86,20 +140,62 @@
     <div id="mydiv_3">
         <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
         <div id="artist_3"></div>
+        <div class="placeholder"> placerholder </div>
+
         <div id="mydiv_3header">   </div>
         <div id="results_3"> </div>
+    </div>
+
+
+    <div id="mydiv_4">
+        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+        <div id="artist_4"></div>
+        <div class="placeholder"> placerholder </div>
+
+        <div id="mydiv_4header">   </div>
+        <div id="results_4"> </div>
+    </div>
+
+    <div id="mydiv_5">
+        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+        <div id="artist_5"></div>
+        <div class="placeholder"> placerholder </div>
+
+        <div id="mydiv_5header">   </div>
+        <div id="results_5"> </div>
     </div>
 
 </div>
 
 
+<div id="mydiv_6">
+    <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+    <div id="artist_6"></div>
+    <div class="placeholder"> placerholder </div>
+
+    <div id="mydiv_6header">   </div>
+    <div id="results_6"> </div>
 </div>
+
+</div>
+
+
+<div id="lightbox">
+    <div id="lightbox_content">
+        <div id="close">&times;</div>
+        <img id="large_image" src="place_holder.jpg">
+    </div>
+
+</div>
+
+
+
 
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
 <script type="text/javascript" src="functions.js"></script>
 

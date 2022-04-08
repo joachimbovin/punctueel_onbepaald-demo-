@@ -15,5 +15,8 @@
   "file_14" : ["test_audio.mp3", "audio", "Amelia Tabei"],
   "file_15" : ["test_movie.MOV", "video", "Joachim Bovin" ],
   "file_16" : ["test_movie_2.m4v", "video", "Joachim Bovin"],
-  "file_17" : ["background_test.mp4", "video", "Joachim Bovin"]
+  "file_17" : ["background_test.mp4", "video", "Joachim Bovin"],
+  "file_18" : ["http://www.anteriorinsula.com", "link", "artist_X"],
+  "file_19" : ["https://heart.bandcamp.com/album/amb", "link", "artist_X"],
+  "file_20" : ["https://hydra.ojack.xyz/", "link", "artist_X"]
 }
